@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.views.generic import ListView, DetailView
 from .models import *
 
+
 # Create your views here.
 
 
@@ -21,3 +22,6 @@ def index(request):
 
 def get_category(request, slug):
     return render(request, 'blog/category.html')
+
+def get_post(request, slug):
+    return render(request, 'blog/post.html')

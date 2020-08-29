@@ -39,10 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'news.apps.NewsConfig',
+    'testapp.apps.TestappConfig',
     'debug_toolbar',
     'ckeditor',
     'ckeditor_uploader',
     'captcha',
+    'mptt'
 ]
 
 MIDDLEWARE = [
